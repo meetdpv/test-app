@@ -4,6 +4,7 @@ metadata:
   name: nginx-service
   namespace: web
 spec:
+  clusterIP: 10.0.162.149
   selector:
     app: nginx
   ports:
