@@ -4,8 +4,7 @@ metadata:
   name: nginx
   namespace: web
   labels:
-    app.kubernetes.io/name: web
-    app.kubernetes.io/part-of: web
+    app: nginx
 spec:
   type: NodePort
   ports:
@@ -18,5 +17,4 @@ spec:
       targetPort: 443
       protocol: TCP
   selector:
-    app.kubernetes.io/name: web
-    app.kubernetes.io/part-of: web
+    app: nginx
